@@ -1,4 +1,4 @@
-const texts = ["Keychains", "Gift Boxes", "Name Plates","Coasters", "Bookmarks"];
+/*const texts = ["Keychains", "Gift Boxes", "Name Plates","Coasters", "Bookmarks"];
 let counter = 0;
 const changableText = document.getElementById("changable-text");
 
@@ -25,7 +25,7 @@ function Hide() {
       .classList.remove("text-animation-hide");
   }, 300);
 }
-
+*/
 function incrementIndex() {
   if (counter < texts.length - 1) {
     counter++;
@@ -38,3 +38,10 @@ const btn = document.querySelector('.menu-btn');
 btn.onclick = () => {
   document.querySelector('.navbar').classList.toggle('show-menu')
 }
+
+const menuItems = document.querySelectorAll('.menu-item');
+menuItems.forEach(ele => {
+  ele.addEventListener("click",() => {
+    document.querySelector('.navbar').classList.remove('show-menu')
+  })
+})

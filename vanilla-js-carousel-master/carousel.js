@@ -55,13 +55,14 @@ class Carousel {
 
   // Construct the carousel controls
   setControls() {
-    this.carouselControls.forEach((control) => {
+    const controls = ["<",">"]
+    this.carouselControls.forEach((control,i) => {
       galleryControlsContainer.appendChild(
         document.createElement("button")
       ).className = `gallery-controls-${control}`;
 
       document.querySelector(`.gallery-controls-${control}`).innerText =
-        control;
+        controls[i];
     });
   }
 

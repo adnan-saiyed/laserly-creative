@@ -401,7 +401,6 @@ address {
 .tm-gallery-title {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #1a6692;
   margin-bottom: 15px;
 }
 
@@ -788,11 +787,20 @@ address {
   #home {
     background-size: 100%;
     height: auto;
-    margin-top: 64px;
+    margin-top: 60px;
+  }
+  .text-box{
+    margin-left: 60px;
   }
   .text-box h2,
   .text-box p {
     text-align: right;
+  }
+  .text-box h2{
+    font-size: 28px;
+  }
+  .text-box p{
+    font-size: 12px;
   }
 }
 
@@ -807,9 +815,7 @@ address {
   margin: 20px;
 }
 
-#home h2 {
-  font-family: "Times New Roman", Times, serif;
-}
+
 
 footer {
   background-color: #949494;
@@ -819,6 +825,7 @@ footer p {
   color: white;
   font-size: medium;
   font-weight: 200;
+  font-size: 12px;
 }
 
 .credit-section {

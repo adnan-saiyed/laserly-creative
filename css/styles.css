@@ -818,6 +818,7 @@ footer {
 footer p {
   color: white;
   font-size: medium;
+  font-weight: 200;
 }
 
 .credit-section {
@@ -825,4 +826,5 @@ footer p {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  font-weight: 200;
 }
